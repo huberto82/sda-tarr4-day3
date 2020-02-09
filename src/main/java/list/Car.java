@@ -1,6 +1,10 @@
 package list;
 
-public class Car {
+import java.io.Serializable;
+
+public class Car implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private String model;
     private double power;
     public Car(String model, double power) {

@@ -31,15 +31,12 @@ public class AreaApp {
         } catch (IllegalArgumentException e){
             System.out.println("Zgłoszono wyjątek niepoprawnych argumentów: " + e.getMessage());
         }
-
         try{
             Object info = getInfo(null);
             System.out.println(info.toString());
         } catch (NullPointerException e){
             System.out.println("MASZ NULLA!!!");
         }
-
-
     }
 
     public static double obliczBok(double pole, double bok) throws DivideByZeroException, IllegalArgumentException{
